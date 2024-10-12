@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Zone - Online Bookstore</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light grey background for the entire page */
+            color: #333;
+            animation: fadeIn 1s ease;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #333; /* Dark background for navbar */
+            padding: 15px;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: fixed; /* Fixed position for scrolling */
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensure navbar is on top */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #00d1b2; /* Change color on hover */
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 60px; /* Offset for fixed navbar */
+        }
+
+        /* Home Section */
+        #home {
+            background-color: #e3f2fd; /* Light blue background */
+        }
+
+        /* About Us Section */
+        #about {
+            background-color: #ffe0b2; /* Light orange background */
+        }
+
+        /* Register Section */
+        #register {
+            background-color: #d1c4e9; /* Light purple background */
+        }
+
+        /* Login Section */
+        #login {
+            background-color: #c8e6c9; /* Light green background */
+        }
+
+        /* Products Section */
+        #products {
+            background-color: #fff; /* White background for products */
+        }
+
+        .section h2 {
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Products Section */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+
+        .product-card .price {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-card .buy-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .buy-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Login & Register Styles */
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .form-container .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .form-container .message {
+            margin-top: 15px;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 60px 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="register.html">Register</a></li> <!-- Updated to link to register.html -->
+        <li><a href="login.html">Login</a></li> <!-- Updated to link to login.html -->
+        <li><a href="product.html">Products</a></li>
+    </ul>
+</nav>
+
+<!-- Home Section -->
+<div id="home" class="section">
+    <h1>Welcome to Book Zone</h1>
+    <p>Your ultimate destination for book lovers.</p>
+    <a href="product.html" class="btn">Explore Books</a>
+</div>
+
+<!-- About Us Section -->
+<div id="about" class="section">
+    <h2>About Us</h2>
+    <p>At Book Zone, our passion for books drives everything we do. We are dedicated to offering a vast and diverse selection of titles, ensuring that there is something for every type of reader. Whether you're seeking the latest bestseller, a timeless classic, or a hidden gem in a niche genre, our carefully curated collection is designed to cater to all tastes and preferences. We believe in the power of stories to inspire, educate, and entertain, and our mission is to bring these stories to readers everywhere</p>
+</div>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Book Zone. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+    
+
+
+

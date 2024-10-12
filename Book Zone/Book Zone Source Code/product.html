@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Book Zone</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light grey background for the entire page */
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #333; /* Dark background for navbar */
+            padding: 15px;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: fixed; /* Fixed position for scrolling */
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensure navbar is on top */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #00d1b2; /* Change color on hover */
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 60px; /* Offset for fixed navbar */
+        }
+
+        /* Products Section */
+        #products {
+            background-color: #fff; /* White background for products */
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+
+        .product-card .price {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-card .buy-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .buy-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="product.html">Products</a></li> <!-- Current page link -->
+    </ul>
+</nav>
+
+<!-- Products Section -->
+<div id="products" class="section">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="Panchatantra Stories.jpg" alt="Book 1">
+            <h3>Panchatantra Stories</h3>
+            <p class="price">₹999</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="Stories For Girls.jpg" alt="Book 2">
+            <h3>Stories For Girls</h3>
+            <p class="price">₹1299</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="Bedtime Stories.jpg" alt="Book 3">
+            <h3>Bedtime Stories</h3>
+            <p class="price">₹1499</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="all time favourites.jpg" alt="Book 4">
+            <h3>
+                All-Time Favourites for Children</h3>
+            <p class="price">₹1999</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Book Zone. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
